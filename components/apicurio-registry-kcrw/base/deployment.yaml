@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: apicurio-registry-kcrw
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:gbenhaim-stonesoup-ocm-tenant-apicurio-registry-kcrw
+      - image: quay.io/redhat-appstudio/user-workload@sha256:e1bfa8e46b99cc958a019f5543d21942daa18f5fe0608788bb7c12ddb708a486
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
