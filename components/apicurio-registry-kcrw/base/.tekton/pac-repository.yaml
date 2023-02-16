@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: rhosr
+    appstudio.openshift.io/component: apicurio-registry-kcrw
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: apicurio-registry-kcrw
+  namespace: gbenhaim-stonesoup-ocm-tenant
+spec:
+  url: https://github.com/gbenhaim/apicurio-registry

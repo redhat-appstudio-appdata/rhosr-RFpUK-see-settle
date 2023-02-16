@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: apicurio-registry-kcrw
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: apicurio-registry-kcrw
+    app.kubernetes.io/part-of: rhosr
+  name: apicurio-registry-kcrw
+  namespace: gbenhaim-stonesoup-ocm-tenant
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: apicurio-registry-kcrw
+status:
+  loadBalancer: {}
