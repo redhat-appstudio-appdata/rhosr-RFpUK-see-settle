@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: apicurio-registry-kcrw
+  namespace: gbenhaim-stonesoup-ocm-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:e1bfa8e46b99cc958a019f5543d21942daa18f5fe0608788bb7c12ddb708a486
+        name: container-image
+        resources: {}
+status: {}
